@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index1</title>
+    <link rel="stylesheet" href="./assets/bootsstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/validation/css/validationEngine.jquery.css">
+        
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 offset-md-4 m-lg-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="myform">
+                            <img src="./google.jpg" class="mx-auto d-block" alt="Lights" style="width: 35%">
+                            <div class="mb-3">
+                                <label for="">Email</label>
+                                <input type="email" name="mail" id="mail" class="form-control validate[required,custom[email]]" placeholder="Enter email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">password</label>
+                                <input type="password" name="pass" id="pass" class="form-control validate[required,maxSize[8]]" placeholder="Enter password">
+                            </div>
+            
+                            <br>
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" class="link-primary text-decoration-none"> forget password</a><br>
+                                </div>
+                              
+                                <div class="col">
+                                    <button class="btn-primary float-end mb-5 w-auto"type="button">login</button>
+                                </div>
+                            </div>
+               
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <script src="./assets/js/jquery-3.6.0.min.js"></script>
+ <script src="./assets/validation/js/languages/jquery.validationEngine-en.js"></script>
+ <script src="./assets/validation/js/jquery.validationEngine.js "></script>
+ <script>
+        $("#myform").validationEngine();
+</script>
+</body>
+</html>

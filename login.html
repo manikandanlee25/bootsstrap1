@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="./assets/bootsstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/validation/css/validationEngine.jquery.css">
+</head>
+<body>
+    <div class="p-5 mt-4 mb-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-5 offset-md-4 m-lg-auto">
+                    <div class="card bg-success">
+                        <div class="card-header text-center bg-warning">Registration form</form></div>
+                            <div class="card-body">
+                                <form id="myform">
+                                    <div class="row ">
+                                        <div class="col">
+                                            <label for="">firstname</label>
+                                            <input type="text" name="firstname" id="firstname" class="form-control validate[required]" placeholder="enter firstname">
+                                        </div>
+                                        <div class="col">
+                                            <label for="">lastname</label>
+                                            <input type="text" name=" lastname" id="lastname" class="form-control validate[required]" placeholder="enter lastname">
+                                        </div>
+                                        <div class="">
+                                            <label for="">Email</label>
+                                            <input type="email" name="mail" id="mail"class="form-control validate[required,custom[email]]"placeholder="enter email">
+                                        </div>
+                                        <div class="">
+                                            <label for="">Password</label>
+                                            <input type="password"name="pass" id="pass" class="form-control validate[required]" placeholder="enter your password">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col mb-3">
+                                            <label for="">Mobile number</label>
+                                            <input type="mobilenumber" name="num1" id="num1" class="form-control validate[required,maxSize[10]]" placeholder="enter mobile number">
+                                        </div>
+                                        <div class="col mb-3">
+                                            <label for="">Alternate number</label>
+                                            <input type="mobilenumber"  name="num2" id="num2" class="form-control validate[required,maxSize[10]]" placeholder="enter mobile number">
+                                        </div>
+                                    </div>
+                                       <div>
+                                            <label for="">Address</label>
+                                            <input type="address" name="address" id="address" class="form-control validate[required]" placeholder="Address">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="">city</label>
+                                                <input type="city"name="city" id="city" class="form-control validate[required]" placeholder=" city">
+                                            </div>
+                                            <div class="col mb-3">
+                                                <label for="">state</label>
+                                                <select id="inputState" class="form-control validate[required]">
+                                                <option selected>Choose...</option>
+                                                <option>tamilnadu</option>
+                                                <option>kerala</option>
+                                                <option>andhrapradesh</option>
+                                                <option>karnataka</option>
+                                                </select>
+                                            </div>
+                                        </div> 
+                                        <div class="row">
+                                            <div class="col mb-3">
+                                                <label for="">zip</label>
+                                                <input type="zip"name="zip" id="zip" class="form-control validate[required,maxSize[6]]" placeholder="zip">
+                                            </div>
+                                            <div class="col mb-3">
+                                                <label for="">country</label>
+                                                <input type="country"name="country" id="country" class="form-control validate[required]" placeholder=" country">
+                                            </div>
+                                        </div>
+                                        <br>
+                                        <div class="d-grid gap-2 col-6 mx-auto">
+                                            <button class="btn btn-dark" type="button">submit</button>
+                                        </div>
+                               </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <script src="./assets/js/jquery-3.6.0.min.js"></script>
+  <script src="./assets/validation/js/languages/jquery.validationEngine-en.js"></script>
+  <script src="./assets/validation/js/jquery.validationEngine.min.js"></script>
+  <script> 
+      $("#myform").validationEngine();
+  </script>
+</body>
+</html>
